@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://oclock.io/favicon-32x32.png" sizes="32x32">
+    <!-- integration des CSS -->
+    <!-- bootstrap CDN serveur qui nous fournis le fichier css pour eviter de le telecharger en local -->
+    <!-- bootstrap en premier si besoin de le surcharger -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- intégration des fichier Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/script.js"></script>
+    <title>Test technique JavaScript</title>
+</head>
+
+<body>
+    <!-- la video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="CSS/1024310327-preview.mp4" type="video/mp4">
+    </video>
+
+    <div class="er-block">
+        <h1 class="text-center">Convertisseur de devise</h1>
+        <form>
+            <div class="row">
+                <div class="col text-right">
+                    <label for="euro">Montant en Euro :</label>
+                </div>
+                <div class="col">
+                    <input class="form-control form-control-lg" type="number" placeholder="" id="euro">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-right">
+                    <label for="devise">Devise :</label>
+                </div>
+                <div class="col">
+                    <select class="form-control form-control-lg" id="devise">
+                        <option value="0">Choisir</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col text-center">
+                           <h2 id="affichage"></h2>
+                        </div>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
